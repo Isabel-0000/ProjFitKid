@@ -7,8 +7,9 @@
 	<link rel="stylesheet" type="text/css"  href="vendor/bootstrap/css/bootstrap.min.css"/>
 	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 	<script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/submitLog.js"></script>
 </head>
-<body style="background-color: white">
+<body style="background-color: white" onload="getSuggestions()">
 
 
 <!-- Navbar -->
@@ -38,31 +39,7 @@
   </div><!-- /.container-fluid -->
 </nav>
 
-<div class="list-group">
-  <div class="panel panel-primary">
-    <h4 class="list-group-item-heading">Protein</h4>
-    <p class="list-group-item-text">Eat more beans</p>
-  </div>
-   <div class="panel panel-primary">
-    <h4 class="list-group-item-heading">Fruits / Veggies</h4>
-    <p class="list-group-item-text">Eat some spinach</p>
-  </div>
-   <div class="panel panel-primary"> 
-    <h4 class="list-group-item-heading">Dairy</h4>
-    <p class="list-group-item-text">Eat less ice cream</p>
-  </div>
-   <div class="panel panel-primary">
-    <h4 class="list-group-item-heading">Carbohydrates</h4>
-    <p class="list-group-item-text">Eat more whole grains</p>
-  </div>
-  <div class="panel panel-primary">
-    <h4 class="list-group-item-heading">Junk Food</h4>
-    <p class="list-group-item-text">Just eat less of it in general!</p>
-  </div>
-   <div class="panel panel-primary">
-    <h4 class="list-group-item-heading">Exercise</h4>
-    <p class="list-group-item-text">Jump rope for 8 hours a day</p>
-  </div>
+<div class="list-group" id="Suggestions">
 </div>
 
 </body>
